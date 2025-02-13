@@ -187,13 +187,9 @@ public class ListImpl<E> implements List<E> {
          * Devuelve el siguiente elemento en la lista.
          *
          * @return el siguiente elemento en la lista
-         * @throws java.util.NoSuchElementException si no hay más elementos
          */
         @Override
         public E next() {
-            if (!hasNext()) {
-                throw new java.util.NoSuchElementException();
-            }
             E dato = actual.dato;
             actual = actual.siguiente;
             return dato;
