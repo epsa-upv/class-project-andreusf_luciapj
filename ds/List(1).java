@@ -1,7 +1,7 @@
 package ds;
+import exceptions.WrongIndexException;
 import java.util.Iterator;
-import exceptions.*
-;
+
 public interface List<E> extends Iterable<E> {
     void insert(int pos, E data) throws WrongIndexException;
     void delete(int pos) throws WrongIndexException;
